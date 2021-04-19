@@ -26,7 +26,7 @@ namespace MiCalculadoraFrm
         /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            lblResultado.Text = (FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text)).ToString();
+            lblResultado.Text = (FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text)).ToString("#0.00");
         }        
         /// <summary>
         /// Metodo de Instancia que pertenece al boton Limpiar. LLama a this.Limpiar() y habilita o no

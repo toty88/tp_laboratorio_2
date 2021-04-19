@@ -61,7 +61,7 @@ namespace NumeroLibrary
         /// <returns> Retorna el double o cero </returns>
         private static double ValidarNumero(string strNumero)
         {
-            if(CultureInfo.CurrentCulture.Name.Equals("en-US"))
+            if (CultureInfo.CurrentCulture.Name.Equals("en-US"))
             {
                 strNumero = strNumero.Replace(',', '.');
             }
@@ -122,11 +122,28 @@ namespace NumeroLibrary
         /// convertir </returns>
         public string DecimalBinario(string numero)
         {
-            bool numeroParse = int.TryParse(numero, out int num);
+            int binarioSize;
+            int num;
+            string temp = null;
+            /* Nos quedamos con la parte entera */
+            for (int i = 0; i < numero.Length; i++)
+            {
+                if (numero[i].Equals('.'))
+                {
+                    break;
+                }
+                temp += numero[i];
+            }
+            /* Parseamos la parte entera a int */
+            bool numeroParse = int.TryParse(temp, out num);
+            /*
+             * Convertimos a Binario si el parseo fue exitoso
+             * Agregamos padding en caso de que el binario sea menor a 65536
+             */
             if(numeroParse)
             {
                 num = Math.Abs(num);
-                string binario = "";
+                string binario = null;
                 int cociente = num;
                 while (cociente > 1)
                 {
@@ -144,14 +161,18 @@ namespace NumeroLibrary
                 if (num != 0)
                 {
                     binario = '1' + binario;
-                    int size;
-                    if (binario.Length < 8)
+                    /* Chequeamos cuanto se precisa de padding */
+                    if ((binario.Length / 8) < 1)
                     {
-                        size = 8 - binario.Length;
-                        for (int x = 0; x < size; x++)
-                        {
-                            binario = "0" + binario;
-                        }
+                        binarioSize = 8 - binario.Length;
+                    }
+                    else
+                    {
+                        binarioSize = 16 - binario.Length;
+                    }
+                    for (int x = 0; x < binarioSize; x++)
+                    {
+                        binario = "0" + binario;
                     }
                     return binario;
                 }
