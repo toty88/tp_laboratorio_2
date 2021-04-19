@@ -1,0 +1,6 @@
+C:\Users\toty\source\repos\Numero\bin\Debug\Numero.dll
+C:\Users\toty\source\repos\Numero\bin\Debug\Numero.pdb
+C:\Users\toty\source\repos\Numero\obj\Debug\NumeroLibrary.csprojAssemblyReference.cache
+C:\Users\toty\source\repos\Numero\obj\Debug\NumeroLibrary.csproj.CoreCompileInputs.cache
+C:\Users\toty\source\repos\Numero\obj\Debug\Numero.dll
+C:\Users\toty\source\repos\Numero\obj\Debug\Numero.pdb
