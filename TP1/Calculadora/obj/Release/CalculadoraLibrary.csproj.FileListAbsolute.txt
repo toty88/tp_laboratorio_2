@@ -1,0 +1,9 @@
+C:\Users\toty\source\repos\Calculadora\bin\Release\Calculadora.dll
+C:\Users\toty\source\repos\Calculadora\bin\Release\Calculadora.pdb
+C:\Users\toty\source\repos\Calculadora\bin\Release\Numero.dll
+C:\Users\toty\source\repos\Calculadora\bin\Release\Numero.pdb
+C:\Users\toty\source\repos\Calculadora\obj\Release\CalculadoraLibrary.csprojAssemblyReference.cache
+C:\Users\toty\source\repos\Calculadora\obj\Release\CalculadoraLibrary.csproj.CoreCompileInputs.cache
+C:\Users\toty\source\repos\Calculadora\obj\Release\CalculadoraLibrary.csproj.CopyComplete
+C:\Users\toty\source\repos\Calculadora\obj\Release\Calculadora.dll
+C:\Users\toty\source\repos\Calculadora\obj\Release\Calculadora.pdb
