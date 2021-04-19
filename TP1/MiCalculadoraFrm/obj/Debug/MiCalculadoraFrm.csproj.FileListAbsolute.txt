@@ -1,0 +1,15 @@
+C:\Users\toty\source\repos\MiCalculadoraFrm\bin\Debug\MiCalculadoraFrm.exe.config
+C:\Users\toty\source\repos\MiCalculadoraFrm\bin\Debug\MiCalculadoraFrm.exe
+C:\Users\toty\source\repos\MiCalculadoraFrm\bin\Debug\MiCalculadoraFrm.pdb
+C:\Users\toty\source\repos\MiCalculadoraFrm\obj\Debug\MiCalculadoraFrm.csprojAssemblyReference.cache
+C:\Users\toty\source\repos\MiCalculadoraFrm\obj\Debug\MiCalculadoraFrm.FormCalculadora.resources
+C:\Users\toty\source\repos\MiCalculadoraFrm\obj\Debug\MiCalculadoraFrm.Properties.Resources.resources
+C:\Users\toty\source\repos\MiCalculadoraFrm\obj\Debug\MiCalculadoraFrm.csproj.GenerateResource.cache
+C:\Users\toty\source\repos\MiCalculadoraFrm\obj\Debug\MiCalculadoraFrm.csproj.CoreCompileInputs.cache
+C:\Users\toty\source\repos\MiCalculadoraFrm\obj\Debug\MiCalculadoraFrm.exe
+C:\Users\toty\source\repos\MiCalculadoraFrm\obj\Debug\MiCalculadoraFrm.pdb
+C:\Users\toty\source\repos\MiCalculadoraFrm\bin\Debug\Calculadora.dll
+C:\Users\toty\source\repos\MiCalculadoraFrm\bin\Debug\Numero.dll
+C:\Users\toty\source\repos\MiCalculadoraFrm\bin\Debug\Calculadora.pdb
+C:\Users\toty\source\repos\MiCalculadoraFrm\bin\Debug\Numero.pdb
+C:\Users\toty\source\repos\MiCalculadoraFrm\obj\Debug\MiCalculadoraFrm.csproj.CopyComplete
