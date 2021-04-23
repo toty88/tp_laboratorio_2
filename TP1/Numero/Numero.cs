@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Globalization;
 using System.Threading.Tasks;
 
 
@@ -62,6 +61,7 @@ namespace NumeroLibrary
         /// <returns> Retorna el double o cero </returns>
         private static double ValidarNumero(string strNumero)
         {
+            strNumero = strNumero.Replace('.', ',');
             bool validadoParse = double.TryParse(strNumero, out double validado);
             if(validadoParse == true)
             {
@@ -124,7 +124,7 @@ namespace NumeroLibrary
             /* Nos quedamos con la parte entera */
             for (int i = 0; i < numero.Length; i++)
             {
-                if (numero[i].Equals('.'))
+                if (numero[i].Equals('.') || numero[i].Equals(','))
                 {
                     break;
                 }
