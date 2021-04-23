@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Globalization;
+
 
 namespace NumeroLibrary
 {
@@ -61,10 +61,8 @@ namespace NumeroLibrary
         /// <returns> Retorna el double o cero </returns>
         private static double ValidarNumero(string strNumero)
         {
-            if (CultureInfo.CurrentCulture.Name.Equals("en-US"))
-            {
-                strNumero = strNumero.Replace(',', '.');
-            }
+
+            strNumero = strNumero.Replace('.', ',');
             bool validadoParse = double.TryParse(strNumero, out double validado);
             if(validadoParse == true)
             {
