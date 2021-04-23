@@ -53,7 +53,6 @@ namespace MiCalculadoraFrm
             // 
             // btnOperar
             // 
-            this.btnOperar.Enabled = false;
             this.btnOperar.Location = new System.Drawing.Point(12, 98);
             this.btnOperar.Name = "btnOperar";
             this.btnOperar.Size = new System.Drawing.Size(116, 45);
@@ -136,7 +135,6 @@ namespace MiCalculadoraFrm
             this.cmbOperador.Name = "cmbOperador";
             this.cmbOperador.Size = new System.Drawing.Size(65, 32);
             this.cmbOperador.TabIndex = 1;
-            this.cmbOperador.SelectedIndexChanged += new System.EventHandler(this.cmbOperador_SelectedIndexChanged);
             // 
             // FormCalculadora
             // 

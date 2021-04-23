@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Globalization;
 using System.Threading.Tasks;
 
 
@@ -61,8 +62,6 @@ namespace NumeroLibrary
         /// <returns> Retorna el double o cero </returns>
         private static double ValidarNumero(string strNumero)
         {
-
-            strNumero = strNumero.Replace('.', ',');
             bool validadoParse = double.TryParse(strNumero, out double validado);
             if(validadoParse == true)
             {
@@ -120,7 +119,6 @@ namespace NumeroLibrary
         /// convertir </returns>
         public string DecimalBinario(string numero)
         {
-            int binarioSize;
             int num;
             string temp = null;
             /* Nos quedamos con la parte entera */
@@ -159,19 +157,6 @@ namespace NumeroLibrary
                 if (num != 0)
                 {
                     binario = '1' + binario;
-                    /* Chequeamos cuanto se precisa de padding */
-                    if ((binario.Length / 8) < 1)
-                    {
-                        binarioSize = 8 - binario.Length;
-                    }
-                    else
-                    {
-                        binarioSize = 16 - binario.Length;
-                    }
-                    for (int x = 0; x < binarioSize; x++)
-                    {
-                        binario = "0" + binario;
-                    }
                     return binario;
                 }
                 else

@@ -37,7 +37,6 @@ namespace MiCalculadoraFrm
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             this.Limpiar();
-            btnOperar.Enabled = !(string.IsNullOrEmpty(cmbOperador.Text));
         }        
         /// <summary>
         /// Metodo de Instancia que pertenece al boton Cerrar y pregunta al usuario si realmente desea salir
@@ -110,17 +109,6 @@ namespace MiCalculadoraFrm
         private void txtNumero1_TextChanged(object sender, EventArgs e)
         {
             txtNumero2.Enabled = !string.IsNullOrEmpty(txtNumero1.Text);
-        }
-        /// <summary>
-        /// Metodo que habilita/deshabilita a btnOperar de acuerdo a si el Combo Box fue seleccionado o no.
-        /// Para que la habilitacion funcione correctamente se tiene que seleccionar un operador del Combo Box 
-        /// a traves del despligue manual de opciones. No funciona escribiendo por teclado el tipo de operador. 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void cmbOperador_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            btnOperar.Enabled = !string.IsNullOrEmpty(cmbOperador.Text);
         }
     }
 }
