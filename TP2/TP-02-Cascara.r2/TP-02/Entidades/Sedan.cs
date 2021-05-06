@@ -19,9 +19,6 @@ namespace Entidades
         #endregion
 
         #region Constructores
-        public Sedan(EMarca marca, string chasis, ConsoleColor color)
-           : base(chasis, marca, color)
-        { }
         /// <summary>
         /// Por defecto, TIPO será CuatroPuertas
         /// </summary>
@@ -31,8 +28,12 @@ namespace Entidades
         public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo)
             : base(chasis, marca, color)
         {
-            this.tipo = ETipo.CuatroPuertas;
+            this.tipo = tipo;
         }
+        public Sedan(EMarca marca, string chasis, ConsoleColor color)
+           : this(marca, chasis, color, ETipo.CuatroPuertas)
+        { }
+
         #endregion
 
         #region Propiedades
