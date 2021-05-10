@@ -56,9 +56,8 @@ namespace Entidades
         public static explicit operator string(Vehiculo p)
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"Marca: {p.marca.ToString()}");
-            sb.AppendLine($"Tamanio: {p.Tamanio}");
             sb.AppendLine($"Chasis: {p.chasis}");
+            sb.AppendLine($"Marca: {p.marca.ToString()}");
             sb.AppendLine($"Color: {p.color.ToString()}");
             sb.AppendLine("---------------------");
             return sb.ToString();
