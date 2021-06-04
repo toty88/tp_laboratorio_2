@@ -1,6 +1,0 @@
-C:\Users\toty\source\repos\Numero\bin\Release\Numero.dll
-C:\Users\toty\source\repos\Numero\bin\Release\Numero.pdb
-C:\Users\toty\source\repos\Numero\obj\Release\NumeroLibrary.csprojAssemblyReference.cache
-C:\Users\toty\source\repos\Numero\obj\Release\NumeroLibrary.csproj.CoreCompileInputs.cache
-C:\Users\toty\source\repos\Numero\obj\Release\Numero.dll
-C:\Users\toty\source\repos\Numero\obj\Release\Numero.pdb
