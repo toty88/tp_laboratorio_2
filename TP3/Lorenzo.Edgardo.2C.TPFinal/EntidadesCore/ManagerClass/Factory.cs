@@ -196,6 +196,14 @@ namespace EntidadesCore
             StringBuilder sb = new StringBuilder();
             foreach (Product item in listaProductos)
             {
+                if(item is Keyboard)
+                {
+                    sb.AppendLine("####### KEYBOARD #######");
+                }
+                else
+                {
+                    sb.AppendLine("####### NOTEBOOK #######");
+                }
                 sb.AppendLine(item.ToString());
             }
             return sb.ToString();
