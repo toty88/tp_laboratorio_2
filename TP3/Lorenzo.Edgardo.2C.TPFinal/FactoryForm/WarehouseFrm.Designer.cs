@@ -117,6 +117,10 @@ namespace FactoryForm
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblProduct);
             this.Controls.Add(this.cmbProduct);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(883, 297);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(883, 297);
             this.Name = "WarehouseFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Warehouse";

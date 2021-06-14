@@ -32,7 +32,11 @@ namespace FactoryForm
             }
             catch (FileNotFoundException ex)
             {
-                MessageBox.Show("Cant load Front image");
+                MessageBox.Show("Cant load Front image", ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
         private static void InitFactory()
@@ -45,22 +49,20 @@ namespace FactoryForm
         private void btnStock_Click(object sender, EventArgs e)
         {
             StockFrm formularioStock = new StockFrm();
-            if (formularioStock.ShowDialog() == DialogResult.OK)
-            {
-                MessageBox.Show("Formulario Stock finalizado con exito");
-            }
+            formularioStock.ShowDialog();
+  
         }
         private void btnBuild_Click(object sender, EventArgs e)
         {
             BuildFrm buildfrm = new BuildFrm();
             if (buildfrm.ShowDialog() == DialogResult.OK)
             {
-                MessageBox.Show("Build succesfull");
+                MessageBox.Show("Successful Build", "Product Build", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Confirm exit?", "Exit", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
+            if (MessageBox.Show("Confirm exit?", "Exit", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
                 == DialogResult.OK)
             {
                 this.Close();
@@ -69,10 +71,8 @@ namespace FactoryForm
         private void btnWarehouse_Click(object sender, EventArgs e)
         {
             WarehouseFrm warehouseFrm = new WarehouseFrm();
-            if (warehouseFrm.ShowDialog() == DialogResult.OK)
-            {
-                MessageBox.Show("Products listed successfully");
-            }
+            warehouseFrm.ShowDialog();
+
         }
         private void btnReports_Click(object sender, EventArgs e)
         {

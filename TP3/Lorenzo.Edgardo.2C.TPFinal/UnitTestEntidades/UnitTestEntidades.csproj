@@ -56,7 +56,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SortCenterUI\EntidadesCore.csproj">
+    <ProjectReference Include="..\EntidadesCore\EntidadesCore.csproj">
       <Project>{62ca1db0-f837-4526-a28f-4c987becf861}</Project>
       <Name>EntidadesCore</Name>
     </ProjectReference>

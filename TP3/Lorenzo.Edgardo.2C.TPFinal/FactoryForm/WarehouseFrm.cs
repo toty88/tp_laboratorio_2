@@ -27,7 +27,6 @@ namespace FactoryForm
 
         private void cmbProduct_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // ASI FUNCIONA PERFECTO, ARGREGAR MAS PRODUCTOS AL CMBOX Y UN RADIO BUTTON PARA SER MAS ESPECIFICOS
             try
             {
 
@@ -76,16 +75,15 @@ namespace FactoryForm
             }
             catch (NullReferenceException ex)
             {
-                MessageBox.Show("Error loading Products Info.");
+                MessageBox.Show("Error loading Products Info.", ex.Message);
             }
         }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             if ((MessageBox.Show("Confirm back to Main Menu?", "Back Main Menu", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
                 == DialogResult.OK))
             {
-                this.DialogResult = DialogResult.OK;
+                this.Close();
             }
         }
     }

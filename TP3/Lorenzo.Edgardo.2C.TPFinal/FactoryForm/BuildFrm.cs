@@ -14,13 +14,13 @@ namespace FactoryForm
 {
     public partial class BuildFrm : Form
     {
-        private static string keyboardSelected;
+        private static string productSelected;
         private bool keyboard = false;
         private bool notebook = false;
         public BuildFrm()
         {
             InitializeComponent();
-            keyboardSelected = null;
+            productSelected = null;
         }
 
         private void BuildFrm_Load(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace FactoryForm
                     {
                         if (((RadioButton)item).Checked)
                         {
-                            keyboardSelected = ((RadioButton)item).Text;
+                            productSelected = ((RadioButton)item).Text;
                             switch (((RadioButton)item).Name)
                             {
                                 case "rbLeopoldFC980M":
@@ -151,7 +151,7 @@ namespace FactoryForm
             }
             catch (FileNotFoundException ex)
             {
-                MessageBox.Show("File not found" + path);
+                MessageBox.Show("File not found at:" + path, ex.Message);
             }
         }
 
@@ -171,10 +171,8 @@ namespace FactoryForm
         private void btnStock_Click(object sender, EventArgs e)
         {
             StockFrm formularioStock = new StockFrm();
-            if (formularioStock.ShowDialog() == DialogResult.OK)
-            {
-                MessageBox.Show("Formulario Stock finalizado con exito");
-            }
+            formularioStock.ShowDialog();
+
         }
 
         private void btnBuild_Click(object sender, EventArgs e)
@@ -196,7 +194,7 @@ namespace FactoryForm
             bool notebookDockStation = true;
             try
             {
-                if (keyboardSelected.Length > 0)
+                if (productSelected.Length > 0)
                 {
                     string file = AppDomain.CurrentDomain.BaseDirectory + @"\ProductList.txt";
                     string[] datos;
@@ -205,19 +203,23 @@ namespace FactoryForm
                         string line;
                         while ((line = sr.ReadLine()) != null)
                         {
-                            if (line.Contains(keyboardSelected))
+                            if (line.Contains(productSelected))
                             {
-                                if (keyboardSelected.Contains("Thinkpad T420") || keyboardSelected.Contains("Thinkpad T430") 
-                                    || keyboardSelected.Contains("Thinkpad T440") || keyboardSelected.Contains("Thinkpad T450"))
+                                if (productSelected.Contains("Thinkpad T420") || productSelected.Contains("Thinkpad T430") 
+                                    || productSelected.Contains("Thinkpad T440") || productSelected.Contains("Thinkpad T450"))
                                 {
                                     datos = line.Split(',');
-                                    notebookName = datos[0];
+                                    notebookName = datos[0].ToString();
                                     priceParse = double.TryParse(datos[1], out notebookPrice);
                                     notebookScreenSize = (EScreenSize)Enum.Parse(typeof(EScreenSize), datos[2]);
                                     trackpadParse = int.TryParse(datos[3], out notebookTrackpad);
                                     if (datos[4] == "false")
                                     {
                                         notebookDockStation = false;
+                                    }
+                                    if(string.IsNullOrEmpty(notebookName) || priceParse == false || trackpadParse == false || (datos[4] != "false" && datos[4] != "true"))
+                                    {
+                                        throw new DataErrorException("There was a problem loading Product Data");
                                     }
                                     Factory.Create = new Thinkpad(notebookName, notebookPrice, notebookScreenSize, notebookTrackpad, notebookDockStation);
                                     notebook = true;
@@ -227,13 +229,16 @@ namespace FactoryForm
                                     datos = line.Split(',');
                                     keyboardName = datos[0].ToString();
                                     priceParse = double.TryParse(datos[1], out keyboardPrice);
-
                                     keyboardSize = (EKeyboardSize)Enum.Parse(typeof(EKeyboardSize), datos[2]);
                                     if (datos[3] == "false")
                                     {
                                         keyboardCable = false;
                                     }
                                     keyboardSwitchColor = (ESwitchColor)Enum.Parse(typeof(ESwitchColor), datos[4]);
+                                    if (string.IsNullOrEmpty(keyboardName) || priceParse == false || (datos[3] != "false" && datos[3] != "true"))
+                                    {
+                                        throw new DataErrorException("There was a problem loading Product Data");
+                                    }
                                     Factory.Create = new MechanicalKeyboard(keyboardName, keyboardPrice, keyboardSize, keyboardCable, keyboardSwitchColor);
                                     keyboard = true;
                                 }
@@ -241,7 +246,11 @@ namespace FactoryForm
                         }
                     }
                 }
-                MessageBox.Show($"{keyboardSelected} build successfully");
+                MessageBox.Show($"{productSelected} build successfully");
+            }
+            catch(DataErrorException ex)
+            {
+                MessageBox.Show(ex.Message);
             }
             catch (FileNotFoundException ex)
             {
@@ -249,7 +258,12 @@ namespace FactoryForm
             }
             catch (OutOfStockException ex)
             {
-                MessageBox.Show("No more stock available, please go to Stock section");
+                MessageBox.Show($"No more stock available to build {productSelected}\n" +
+                    $"Go to Stock section");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

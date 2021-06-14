@@ -41,7 +41,7 @@ namespace Test
             }
             catch(OutOfStockException ex)
             {
-                Console.WriteLine($"No hay stock suficiente (1) ");
+                Console.WriteLine($"No hay stock suficiente (1) ", ex.Message);
                 
             }
             try
@@ -52,7 +52,7 @@ namespace Test
             }
             catch (OutOfStockException ex)
             {
-                Console.WriteLine("No hay stock suficiente (2) ");
+                Console.WriteLine("No hay stock suficiente (2) ", ex.Message);
                 sinStock = true;
             }
 
@@ -66,14 +66,36 @@ namespace Test
                 Factory.Create = new Thinkpad("T430", 2500, EScreenSize.LargeScreen, 1, true);
                 Console.WriteLine("Se agregan mas productos (3) \n\n" + Factory.ProductsInfo() + "\n\n");
             }
-            catch (OutOfStockException e)
+            catch (OutOfStockException ex)
             {
-                Console.WriteLine("Te quedaste sin stock (3) ");
+                Console.WriteLine("Te quedaste sin stock (3) ", ex.Message);
 
             }
 
             Console.WriteLine("Consulto Stock (2) \n\n" + Factory.StockInfo());
 
+            //PROBAMOS SERIALIZACION
+            try
+            {
+                // Corroboramos que la lista de productos sea mayor a 0
+                // Si no lo es, lanzamos excepcion
+                if (!(Factory.listaProductos.Count > 0))
+                {
+                    throw new NoProductCreatedException("Stock is empty, nothing to be serialized\nGo build some");
+                }
+                string path = AppDomain.CurrentDomain.BaseDirectory + "ProductsList.xml";
+                Serializator<List<Product>> toXml = new Serializator<List<Product>>();
+                toXml.Save(path, Factory.listaProductos);
+                Console.WriteLine($"XML file created successfully at {AppDomain.CurrentDomain.BaseDirectory}");
+            }
+            catch (NoProductCreatedException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             Console.ReadKey();
         }
     }

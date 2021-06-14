@@ -39,7 +39,11 @@ namespace FactoryForm
             }
             catch (FileNotFoundException ex)
             {
-                MessageBox.Show("Cant load Front image");
+                MessageBox.Show("Cant load Front image", ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
             this.chartStock.BackColor = Color.Transparent;
             this.chartStock.ChartAreas[0].BackColor = Color.Transparent;

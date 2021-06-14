@@ -21,38 +21,63 @@ namespace FactoryForm
 
         private void ReportsFrm_Load(object sender, EventArgs e)
         {
+            this.txtDefaultFileName.Enabled = false;
             this.rtbProducts.Text = "";
+            this.ControlBox = false;
         }
 
         private void btnListProducts_Click(object sender, EventArgs e)
         {
-            foreach (Product item in Factory.listaProductos)
-            {
-                if (item is Keyboard)
-                {
-                    this.rtbProducts.Text += "####### KEYBOARD ########\n";
-                }
-                else
-                {
-                    this.rtbProducts.Text += "####### NOTEBOOK ########\n";
-
-                }
-                this.rtbProducts.Text += item.ToString();
-            }
+            this.rtbProducts.Text = Factory.ProductsInfo();
         }
 
         private void btnSaveToXML_Click(object sender, EventArgs e)
         {
+            string path = null;
             try
             {
-                string path = AppDomain.CurrentDomain.BaseDirectory + "Products.xml";
+                // Corroboramos que la lista de productos sea mayor a 0
+                // Si no lo es, lanzamos excepcion
+                if(!(Factory.listaProductos.Count > 0))
+                {
+                    throw new NoProductCreatedException("Stock is empty, nothing to be serialized\nGo build some");
+                }
+                
+                if (!(string.IsNullOrEmpty(this.txtFIileName.Text)))
+                {
+                    if(this.txtFIileName.Text.Contains(".xml"))
+                    {
+                        path = AppDomain.CurrentDomain.BaseDirectory + $"{this.txtFIileName.Text}";
+                    }
+                    else
+                    {
+                        path = AppDomain.CurrentDomain.BaseDirectory + $"{this.txtFIileName.Text}.xml";
+                    }    
+                }
+                else
+                {
+                    path = AppDomain.CurrentDomain.BaseDirectory + "Products.xml";
+                }
                 Serializator<List<Product>> toXml = new Serializator<List<Product>>();
                 toXml.Save(path, Factory.listaProductos);
-                MessageBox.Show("xml file created successfully");
+                MessageBox.Show($"XML file created successfully at {AppDomain.CurrentDomain.BaseDirectory}");
             }
-            catch (Exception ex)
+            catch (NoProductCreatedException ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if ((MessageBox.Show("Confirm back to Main Menu?", "Back Main Menu", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+                == DialogResult.OK))
+            {
+                this.Close();
             }
         }
     }

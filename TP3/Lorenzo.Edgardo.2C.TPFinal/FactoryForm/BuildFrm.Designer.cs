@@ -385,6 +385,10 @@ namespace FactoryForm
             this.Controls.Add(this.btnStock);
             this.Controls.Add(this.picBKeyboards);
             this.Controls.Add(this.gpbKeyboards);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(631, 467);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(631, 467);
             this.Name = "BuildFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Build Product";

@@ -8,7 +8,7 @@ Varmilo VA87M,1000,Tenkeyless,false,GateronClear
 Ducky One 2,1200,Tenkeyless,true,GateronBlue
 Vortex Core,650,Small,true,CherryBrown
 Qisan Magicforce,770,Small,false,GateronBlue
-Olkb Plank,1100,Small,true,CherryRed,
+Olkb Plank,1100,Small,true,CherryRed
 YMDK,1375,Small,false,GateronBlue
 Thinkpad T420,2500,MediumScreen,1,false
 Thinkpad T430,2900,MediumScreen,1,false
