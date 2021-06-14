@@ -1,0 +1,10 @@
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\bin\Debug\Test.exe.config
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\bin\Debug\Test.exe
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\bin\Debug\Test.pdb
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.exe
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.pdb
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\bin\Debug\EntidadesCore.dll
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\bin\Debug\EntidadesCore.pdb
