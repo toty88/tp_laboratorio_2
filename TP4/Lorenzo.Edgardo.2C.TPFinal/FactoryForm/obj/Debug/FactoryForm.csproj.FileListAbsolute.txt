@@ -1,0 +1,54 @@
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\FactoryForm.exe.config
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\FactoryForm.exe
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\FactoryForm.pdb
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\EntidadesCore.dll
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.dll
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\EntidadesCore.pdb
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.pdb
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.xml
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.csprojAssemblyReference.cache
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.BuildFrm.resources
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.MainFrm.resources
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.Properties.Resources.resources
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.ReportsFrm.resources
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.StockFrm.resources
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.WarehouseFrm.resources
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.csproj.GenerateResource.cache
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.csproj.CoreCompileInputs.cache
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.csproj.CopyComplete
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.exe
+C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.pdb
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\FactoryForm.exe.config
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\FactoryForm.exe
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\FactoryForm.pdb
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\EntidadesCore.dll
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.dll
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\EntidadesCore.pdb
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.pdb
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.xml
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.csprojAssemblyReference.cache
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.BuildFrm.resources
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.MainFrm.resources
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.Properties.Resources.resources
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.ReportsFrm.resources
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.StockFrm.resources
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.WarehouseFrm.resources
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.csproj.GenerateResource.cache
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.csproj.CoreCompileInputs.cache
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.csproj.CopyComplete
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.exe
+C:\Users\toty\Desktop\TP 4 FINAL LABO2\TP4\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.pdb
