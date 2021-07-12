@@ -138,9 +138,9 @@ namespace FactoryForm
             // 
             // rtbFromXML
             // 
-            this.rtbFromXML.Location = new System.Drawing.Point(268, 96);
+            this.rtbFromXML.Location = new System.Drawing.Point(268, 120);
             this.rtbFromXML.Name = "rtbFromXML";
-            this.rtbFromXML.Size = new System.Drawing.Size(225, 349);
+            this.rtbFromXML.Size = new System.Drawing.Size(225, 325);
             this.rtbFromXML.TabIndex = 0;
             this.rtbFromXML.Text = "";
             // 
@@ -197,37 +197,39 @@ namespace FactoryForm
             // 
             this.label1.AllowDrop = true;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(499, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 15);
+            this.label1.Size = new System.Drawing.Size(106, 16);
             this.label1.TabIndex = 26;
-            this.label1.Text = "Last Product Added";
+            this.label1.Text = "Last Product Sent";
             // 
             // lblModel
             // 
             this.lblModel.AutoSize = true;
-            this.lblModel.Location = new System.Drawing.Point(499, 45);
+            this.lblModel.Font = new System.Drawing.Font("Yu Gothic UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModel.Location = new System.Drawing.Point(499, 38);
             this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(0, 13);
+            this.lblModel.Size = new System.Drawing.Size(0, 17);
             this.lblModel.TabIndex = 29;
             // 
             // lblTotalCount
             // 
             this.lblTotalCount.AutoSize = true;
-            this.lblTotalCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalCount.Location = new System.Drawing.Point(495, 97);
+            this.lblTotalCount.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalCount.Location = new System.Drawing.Point(499, 78);
             this.lblTotalCount.Name = "lblTotalCount";
-            this.lblTotalCount.Size = new System.Drawing.Size(135, 15);
+            this.lblTotalCount.Size = new System.Drawing.Size(152, 16);
             this.lblTotalCount.TabIndex = 30;
-            this.lblTotalCount.Text = "Session Total Count";
+            this.lblTotalCount.Text = "Total Products Sent to DB";
             // 
             // lblCount
             // 
             this.lblCount.AutoSize = true;
+            this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCount.Location = new System.Drawing.Point(505, 132);
             this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(0, 13);
+            this.lblCount.Size = new System.Drawing.Size(0, 24);
             this.lblCount.TabIndex = 31;
             // 
             // ReportsFrm
@@ -235,7 +237,7 @@ namespace FactoryForm
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(634, 457);
+            this.ClientSize = new System.Drawing.Size(684, 457);
             this.Controls.Add(this.lblCount);
             this.Controls.Add(this.lblTotalCount);
             this.Controls.Add(this.lblModel);
@@ -252,9 +254,9 @@ namespace FactoryForm
             this.Controls.Add(this.btnSaveToXML);
             this.Controls.Add(this.rtbFromDB);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(650, 496);
+            this.MaximumSize = new System.Drawing.Size(700, 496);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(650, 496);
+            this.MinimumSize = new System.Drawing.Size(700, 496);
             this.Name = "ReportsFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Reports";

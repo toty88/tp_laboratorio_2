@@ -36,7 +36,13 @@ namespace EntidadesCore
             }
             return false;
         }
-
+        
+        /// <summary>
+        /// Metodo que DEserializa un objeto de tipo T (permitiendo ser lista de objetos u objeto unico)
+        /// </summary>
+        /// <param name="path_to_file">La ruta donde se encuentra el XML</param>
+        /// <param name="obj">El objeto donde se guardara el objeto deserializado</param>
+        /// <returns>EL objeto Deserializado</returns>
         public T OpenXML(string path_to_file, T obj)
         {
             try

@@ -17,16 +17,22 @@ namespace FactoryForm
     public delegate void DataBaseDelegate<U>(U obj);
     public partial class ReportsFrm : Form
     {
-        Thread callingThread;
+        #region Atributes
+        public Thread callingThread;
         private static int pCount = 0;
         private static Product pFinal;
         private event DataBaseDelegate<Product> DataBaseModified;
+        #endregion
+
+        #region Constructor
         public ReportsFrm()
         {
             InitializeComponent();
             DataBaseModified += this.UpdateView;
         }
-
+        #endregion
+        
+        #region Frm_Load & Back_Click
         private void ReportsFrm_Load(object sender, EventArgs e)
         {
             this.rtbFromDB.Text = "";
@@ -42,6 +48,7 @@ namespace FactoryForm
                 this.Close();
             }
         }
+        #endregion
 
         #region XML Buttons
         private void btnSaveToXML_Click(object sender, EventArgs e)
@@ -196,19 +203,33 @@ namespace FactoryForm
             }
         }
         #endregion
+
+        #region DELEGATE-THREADS
+        /// <summary>
+        /// Metodo que instancia y pone a correr un hilo
+        /// </summary>
+        /// <param name="obj">El objeto que se le pasa como parametro al metodo del hilo</param>
         private void UpdateView(object obj)
         {
             callingThread = new Thread(new ParameterizedThreadStart(ShowStatistics));
             callingThread.Start(obj);
         }
+        /// <summary>
+        /// Metodo que actualiza 2 labels del form actual
+        /// Aqui se utiliza el InvokeRequired ya que este metodo se esta ejecutando 
+        /// desde un hilo != al del form actual
+        /// </summary>
+        /// <param name="obj">El objeto de tipo producto que contiene el atributo MODEL para modificar label</param>
         private void ShowStatistics(object obj)
         {
+            DateTime current;
+            current = DateTime.Now;
             Product p = (Product)obj;
             if (this.lblModel.InvokeRequired)
             {
                 this.lblModel.BeginInvoke((MethodInvoker)delegate ()
                 {
-                    this.lblModel.Text = p.Model;
+                    this.lblModel.Text = $"{p.Model} at {current.ToString("HH:mm:ss")}";
                     this.lblCount.Text = pCount.ToString();
                 });
             }
@@ -218,5 +239,6 @@ namespace FactoryForm
                 this.lblCount.Text = pCount.ToString();
             }
         }
+        #endregion
     }
 }

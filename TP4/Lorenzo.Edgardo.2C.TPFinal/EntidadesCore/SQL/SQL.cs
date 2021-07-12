@@ -10,6 +10,12 @@ namespace EntidadesCore
     public static class SQL<T>
     {
         #region DB Select
+        /// <summary>
+        /// Metodo que realiza consulta a la Base de Datos
+        /// </summary>
+        /// <param name="connectionString">La ruta de la Base</param>
+        /// <param name="query">La consulta a realizar</param>
+        /// <returns>Si OK Lista con los productos de la Base - SINO se lanza exepcion</returns>
         public static List<Product> QueryBD(string connectionString, string query)
         {
             SqlConnection conection = new SqlConnection();
@@ -88,7 +94,7 @@ namespace EntidadesCore
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error conexion BD - Mensaje: {ex.Message}");
+                throw new Exception($"Error conexion BD - Mensaje: {ex.Message}");
             }
             finally
             {
@@ -99,6 +105,14 @@ namespace EntidadesCore
         #endregion
 
         #region DB Insert
+        /// <summary>
+        /// Metodo que realiza Insert en una tabla x de la DB
+        /// </summary>
+        /// <param name="connectionString">La ruta de la DB</param>
+        /// <param name="query">La NonQuery que contiene la sentencia Insert</param>
+        /// <param name="properties">La lista de propiedades del objeto para pasar al Parameters.AddWithValue</param>
+        /// <param name="obj">El objeto con todos sus atributos</param>
+        /// <returns>True si se inserto ok - false sino - exception si error</returns>
         public static bool Insert(string connectionString, string query, List<string> properties, T obj)
         {
             SqlConnection conection = new SqlConnection();
@@ -138,6 +152,12 @@ namespace EntidadesCore
         #endregion
 
         #region Build Queries
+        /// <summary>
+        /// Metodo para construir query de forma dinamica
+        /// </summary>
+        /// <param name="properties">Los atributos del objeto para construir la query</param>
+        /// <param name="table">La tabla de la DB</param>
+        /// <returns>La query construira - exception si error</returns>
         public static string BuildInsertQuery(List<string> properties, string table)
         {
             string query = null;

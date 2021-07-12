@@ -172,7 +172,13 @@ namespace EntidadesCore
         #endregion
 
         #region Info Methodos
-
+        /// <summary>
+        /// Metodo que devuelve una lista de atributos de un objeto segun su Clase
+        /// </summary>
+        /// <typeparam name="T">La clase del objeto a obtener los atributos</typeparam>
+        /// <param name="list">La lista donde se guardaran los atributos</param>
+        /// <param name="type">El nombre de la Clase</param>
+        /// <returns>La lista de atributos</returns>
         public static List<string> GetProperties<T>(List<T> list, string type)
         {
             List<string> properties = new List<string>();
@@ -190,7 +196,6 @@ namespace EntidadesCore
             properties.Remove(properties.Last());
             return properties;
         }
-
         /// <summary>
         /// Metodo que recorre el diccionario de materiales (stock) y guarda informacion sobre el nombre y la cantidad,
         /// en un string
@@ -217,11 +222,11 @@ namespace EntidadesCore
             {
                 if(item is Keyboard)
                 {
-                    sb.AppendLine("####### KEYBOARD #######");
+                    sb.AppendLine("\n####### KEYBOARD #######");
                 }
                 else
                 {
-                    sb.AppendLine("####### NOTEBOOK #######");
+                    sb.AppendLine("\n####### NOTEBOOK #######");
                 }
                 sb.AppendLine(item.ToString());
             }

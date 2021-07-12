@@ -87,7 +87,6 @@ namespace FactoryForm
             this.gpbKeyboards.TabIndex = 1;
             this.gpbKeyboards.TabStop = false;
             this.gpbKeyboards.Text = "Products";
-            this.gpbKeyboards.Enter += new System.EventHandler(this.gpbKeyboards_Enter);
             // 
             // rdbThinkpadT450
             // 

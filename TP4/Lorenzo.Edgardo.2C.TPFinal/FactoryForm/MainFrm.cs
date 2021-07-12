@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 using System.IO;
 using EntidadesCore;
@@ -14,6 +15,7 @@ namespace FactoryForm
 {
     public partial class MainFrm : Form
     {
+        Thread myThread;
         public MainFrm()
         {
             InitializeComponent();
@@ -65,6 +67,10 @@ namespace FactoryForm
             if (MessageBox.Show("Confirm exit?", "Exit", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
                 == DialogResult.OK)
             {
+                if(this.myThread.IsAlive)
+                {
+                    this.myThread.Abort();
+                }
                 this.Close();
             }
         }
@@ -81,6 +87,7 @@ namespace FactoryForm
             {
                 MessageBox.Show("Inventory saved successfully");
             }
+            this.myThread = reportsFrm.callingThread;
         }
     }
 }

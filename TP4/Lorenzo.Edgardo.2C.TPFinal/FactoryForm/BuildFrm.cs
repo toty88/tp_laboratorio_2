@@ -22,17 +22,10 @@ namespace FactoryForm
             InitializeComponent();
             productSelected = null;
         }
-
         private void BuildFrm_Load(object sender, EventArgs e)
         {
             this.ControlBox = false;
         }
-
-        private void gpbKeyboards_Enter(object sender, EventArgs e)
-        {
-            
-        }
-
         private void KeyboardRadioButtonSelected(object sender, EventArgs e)
         {
             string path = AppDomain.CurrentDomain.BaseDirectory;
@@ -150,13 +143,11 @@ namespace FactoryForm
                 this.Close();
             }
         }
-
         private void btnStock_Click(object sender, EventArgs e)
         {
             StockFrm formularioStock = new StockFrm();
             formularioStock.ShowDialog();
         }
-
         private void btnBuild_Click(object sender, EventArgs e)
         {
             // keyboard data
