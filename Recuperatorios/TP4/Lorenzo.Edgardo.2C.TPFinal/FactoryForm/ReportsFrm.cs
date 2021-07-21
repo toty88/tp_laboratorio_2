@@ -62,7 +62,7 @@ namespace FactoryForm
             this.saveFileDialog.Title = "Select Directory";
             this.saveFileDialog.FileName = "Choose FileName";
             this.saveFileDialog.Filter = "xml files (*.xml)|*.xml";
-            string saveDir = AppDomain.CurrentDomain.BaseDirectory + @"Reports";
+            string saveDir = AppDomain.CurrentDomain.BaseDirectory + @"Reportes_XML\";
             this.saveFileDialog.InitialDirectory = saveDir;
             this.saveFileDialog.RestoreDirectory = true;
             DateTime currentDate;
@@ -105,6 +105,9 @@ namespace FactoryForm
             this.openFileDialog.Title = "Browse XML file";
             this.openFileDialog.FileName = "Choose File";
             this.openFileDialog.Filter = "xml files (*.xml)|*.xml";
+            string openDir = AppDomain.CurrentDomain.BaseDirectory + @"Reportes_XML\";
+            this.openFileDialog.InitialDirectory = openDir;
+            this.openFileDialog.RestoreDirectory = true;
             if (this.openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 path = openFileDialog.FileName;
