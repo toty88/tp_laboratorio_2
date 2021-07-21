@@ -79,7 +79,7 @@ namespace FactoryForm
             this.btnVolerMenuPrincipal.Name = "btnVolerMenuPrincipal";
             this.btnVolerMenuPrincipal.Size = new System.Drawing.Size(144, 58);
             this.btnVolerMenuPrincipal.TabIndex = 37;
-            this.btnVolerMenuPrincipal.Text = "Volver al Menu Principal";
+            this.btnVolerMenuPrincipal.Text = "Volver";
             this.btnVolerMenuPrincipal.UseVisualStyleBackColor = true;
             this.btnVolerMenuPrincipal.Click += new System.EventHandler(this.btnVolerMenuPrincipal_Click);
             // 
@@ -133,7 +133,7 @@ namespace FactoryForm
             this.MinimumSize = new System.Drawing.Size(649, 464);
             this.Name = "StockFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Stock Information";
+            this.Text = "Informacion de Stock";
             this.Load += new System.EventHandler(this.StockFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartStock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBStockFrm)).EndInit();

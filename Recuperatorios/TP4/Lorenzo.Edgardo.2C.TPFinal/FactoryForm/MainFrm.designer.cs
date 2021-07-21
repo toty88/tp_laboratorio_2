@@ -69,7 +69,7 @@ namespace FactoryForm
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(109, 64);
             this.btnReportes.TabIndex = 39;
-            this.btnReportes.Text = "REPORTES";
+            this.btnReportes.Text = "REPORTES (BD & XML)";
             this.btnReportes.UseVisualStyleBackColor = true;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 

@@ -119,7 +119,7 @@ namespace FactoryForm
             this.MinimumSize = new System.Drawing.Size(883, 297);
             this.Name = "WarehouseFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Warehouse";
+            this.Text = "Deposito";
             this.Load += new System.EventHandler(this.WarehouseFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.keyboardBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.notebookBindingSource)).EndInit();

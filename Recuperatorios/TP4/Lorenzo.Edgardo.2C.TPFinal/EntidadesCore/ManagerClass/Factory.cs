@@ -229,11 +229,11 @@ namespace EntidadesCore
                         Thread.Sleep(13);
                         if (obj is Keyboard)
                         {
-                            stock.StockList[key] += random.Next(17, 53);
+                            stock.StockList[key] += random.Next(90, 173);
                         }
                         else
                         {
-                            stock.StockList[key] += random.Next(3, 7);
+                            stock.StockList[key] += random.Next(7, 15);
                         }
                         break;
                     }

@@ -166,7 +166,7 @@ namespace FactoryForm
             // btnTraerDeBase
             // 
             this.btnTraerDeBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTraerDeBase.Location = new System.Drawing.Point(115, 12);
+            this.btnTraerDeBase.Location = new System.Drawing.Point(154, 13);
             this.btnTraerDeBase.Name = "btnTraerDeBase";
             this.btnTraerDeBase.Size = new System.Drawing.Size(90, 58);
             this.btnTraerDeBase.TabIndex = 33;
@@ -177,7 +177,7 @@ namespace FactoryForm
             // btnGuardarXML
             // 
             this.btnGuardarXML.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarXML.Location = new System.Drawing.Point(211, 12);
+            this.btnGuardarXML.Location = new System.Drawing.Point(268, 12);
             this.btnGuardarXML.Name = "btnGuardarXML";
             this.btnGuardarXML.Size = new System.Drawing.Size(90, 58);
             this.btnGuardarXML.TabIndex = 34;
@@ -188,7 +188,7 @@ namespace FactoryForm
             // btnCargarDeXML
             // 
             this.btnCargarDeXML.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarDeXML.Location = new System.Drawing.Point(307, 12);
+            this.btnCargarDeXML.Location = new System.Drawing.Point(403, 13);
             this.btnCargarDeXML.Name = "btnCargarDeXML";
             this.btnCargarDeXML.Size = new System.Drawing.Size(90, 58);
             this.btnCargarDeXML.TabIndex = 35;
@@ -199,7 +199,7 @@ namespace FactoryForm
             // btnVolerMenuPrincipal
             // 
             this.btnVolerMenuPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolerMenuPrincipal.Location = new System.Drawing.Point(403, 12);
+            this.btnVolerMenuPrincipal.Location = new System.Drawing.Point(582, 387);
             this.btnVolerMenuPrincipal.Name = "btnVolerMenuPrincipal";
             this.btnVolerMenuPrincipal.Size = new System.Drawing.Size(90, 58);
             this.btnVolerMenuPrincipal.TabIndex = 36;
@@ -234,7 +234,7 @@ namespace FactoryForm
             this.MinimumSize = new System.Drawing.Size(700, 496);
             this.Name = "ReportsFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Reports";
+            this.Text = "Reportes";
             this.Load += new System.EventHandler(this.ReportsFrm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
