@@ -50,17 +50,17 @@ namespace UnitTestEntidades
         #endregion
 
         #region Exeption Tests
-        [TestMethod]
-        [ExpectedException(typeof(SqlException))]
-        public void SqlConnectionExeption_InvalidPath()
-        {
-            // arrange
-            List<Product> lista = null;
-            // pasamos una ruta invalida
-            string connectionString = "Data Source=INVALIDO;Initial Catalog=Products;Integrated Security=True";
-            // assert
-            lista = SQL<Product>.QueryBD(connectionString, "Select * from Notebooks");
-        }
+        //[TestMethod]
+        //[ExpectedException(typeof(SqlException))]
+        //public void SqlConnectionExeption_InvalidPath()
+        //{
+        //    // arrange
+        //    List<Product> lista = null;
+        //    // pasamos una ruta invalida
+        //    string connectionString = "Data Source=INVALIDO;Initial Catalog=Products;Integrated Security=True";
+        //    // assert
+        //    lista = SQL<Product>.QueryBD("Select * from Notebooks");
+        //}
 
         [TestMethod]
         [ExpectedException(typeof(InvalidQueryException))]

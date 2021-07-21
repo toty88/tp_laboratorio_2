@@ -144,7 +144,6 @@ namespace Test
             string keyboardQuery = null;
             List<string> thinkpadProperties = null;
             List<string> keyboardProperties = null;
-            string connectionString = "Data Source=.;Initial Catalog=Products;Integrated Security=True";
             if (Factory.listaProductos.Count > 0)
             {
                 if (Factory.listaProductos.ContainsType("Thinkpad")) // metodo de extension
@@ -164,11 +163,11 @@ namespace Test
                     {
                         if (item is Thinkpad)
                         {
-                            SQL<Thinkpad>.Insert(connectionString, notebookQuery, thinkpadProperties, (Thinkpad)item);
+                            SQL<Thinkpad>.Insert(notebookQuery, thinkpadProperties, (Thinkpad)item);
                         }
                         if (item is MechanicalKeyboard)
                         {
-                            SQL<MechanicalKeyboard>.Insert(connectionString, keyboardQuery, keyboardProperties, (MechanicalKeyboard)item);
+                            SQL<MechanicalKeyboard>.Insert(keyboardQuery, keyboardProperties, (MechanicalKeyboard)item);
                         }
                         Factory.listaProductos.Remove(item);
                     }
@@ -202,8 +201,8 @@ namespace Test
 
             try
             {
-                listN = SQL<Product>.QueryBD(connectionString, "SELECT * from Notebooks");
-                listK = SQL<Product>.QueryBD(connectionString, "SELECT * from Keyboards");
+                listN = SQL<Product>.QueryBD("SELECT * from Notebooks");
+                listK = SQL<Product>.QueryBD("SELECT * from Keyboards");
             }
             catch (Exception ex)
             {

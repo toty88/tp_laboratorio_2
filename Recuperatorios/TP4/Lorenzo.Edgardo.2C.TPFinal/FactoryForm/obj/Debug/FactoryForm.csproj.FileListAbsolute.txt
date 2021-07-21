@@ -50,3 +50,4 @@ C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\FactoryFo
 C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.csproj.CopyComplete
 C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.exe
 C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\obj\Debug\FactoryForm.pdb
+C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\FactoryForm\bin\Debug\EntidadesCore.dll.config

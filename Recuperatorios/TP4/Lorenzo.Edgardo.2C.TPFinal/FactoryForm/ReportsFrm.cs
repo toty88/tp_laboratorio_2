@@ -140,7 +140,6 @@ namespace FactoryForm
             string keyboardQuery = null;
             List<string> thinkpadProperties = null;
             List<string> keyboardProperties = null;
-            string connectionString = "Data Source=.;Initial Catalog=Products;Integrated Security=True";
             if (Factory.listaProductos.Count > 0)
             {
                 try
@@ -159,11 +158,11 @@ namespace FactoryForm
                     {
                         if (item is Thinkpad)
                         {
-                            SQL<Thinkpad>.Insert(connectionString, notebookQuery, thinkpadProperties, (Thinkpad)item);
+                            SQL<Thinkpad>.Insert(notebookQuery, thinkpadProperties, (Thinkpad)item);
                         }
                         if (item is MechanicalKeyboard)
                         {
-                            SQL<MechanicalKeyboard>.Insert(connectionString, keyboardQuery, keyboardProperties, (MechanicalKeyboard)item);
+                            SQL<MechanicalKeyboard>.Insert(keyboardQuery, keyboardProperties, (MechanicalKeyboard)item);
                         }
                     }
                     List<Product> temp = new List<Product>(Factory.listaProductos);
@@ -186,20 +185,19 @@ namespace FactoryForm
         }
         private void btnConsultarBase_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=.;Initial Catalog=Products;Integrated Security=True";
             List<Product> list = null;
             try
             {
                 if (this.rdbNotebooks.Checked)
                 {
-                    list = SQL<Product>.QueryBD(connectionString, "SELECT * from Notebooks");
+                    list = SQL<Product>.QueryBD("SELECT * from Notebooks");
                     this.rdbNotebooks.Checked = false;
                     if (list.Count == 0)
                         MessageBox.Show("ATENCION: No exiten Productos en la Tabla Notebooks", "Consultar Base de Datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if (this.rdbKeyboards.Checked)
                 {
-                    list = SQL<Product>.QueryBD(connectionString, "SELECT * from Keyboards");
+                    list = SQL<Product>.QueryBD("SELECT * from Keyboards");
                     this.rdbKeyboards.Checked = false;
                     if (list.Count == 0)
                         MessageBox.Show("ATENCION: No exiten Productos en la Tabla Keyboards", "Consultar Base de Datos", MessageBoxButtons.OK, MessageBoxIcon.Information);

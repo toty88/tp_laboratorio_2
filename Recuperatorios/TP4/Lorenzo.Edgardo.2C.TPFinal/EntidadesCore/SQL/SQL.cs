@@ -16,10 +16,13 @@ namespace EntidadesCore
         /// <param name="connectionString">La ruta de la Base</param>
         /// <param name="query">La consulta a realizar</param>
         /// <returns>Si OK Lista con los productos de la Base - SINO se lanza exepcion</returns>
-        public static List<Product> QueryBD(string connectionString, string query)
+        public static List<Product> QueryBD(string query)
         {
-            SqlConnection conection = new SqlConnection();
-            conection.ConnectionString = connectionString;
+            /*
+             * Properties.Settings.Default.StringConnection
+             * En caso de error modificar desde Properties de EntidadesCore
+             */
+            SqlConnection conection = new SqlConnection(Properties.Settings.Default.StringConnection);
             SqlCommand command = new SqlCommand();
             command.Connection = conection;
             SqlDataReader dr;
@@ -117,10 +120,13 @@ namespace EntidadesCore
         /// <param name="properties">La lista de propiedades del objeto para pasar al Parameters.AddWithValue</param>
         /// <param name="obj">El objeto con todos sus atributos</param>
         /// <returns>True si se inserto ok - false sino - exception si error</returns>
-        public static bool Insert(string connectionString, string query, List<string> properties, T obj)
+        public static bool Insert(string query, List<string> properties, T obj)
         {
-            SqlConnection conection = new SqlConnection();
-            conection.ConnectionString = connectionString;
+            /*
+             * Properties.Settings.Default.StringConnection
+             * En caso de error modificar desde Properties de EntidadesCore
+             */
+            SqlConnection conection = new SqlConnection(Properties.Settings.Default.StringConnection);
             SqlCommand command = new SqlCommand();
             command.Connection = conection;
             try

@@ -130,12 +130,16 @@ namespace EntidadesCore
             bool exists;
             try
             {
+                /* Obtenemos c/Producto de la tabla de Notebooks & Keyboards*/
                 List<Product> notebooksInBD = Factory.GetProductsFromDB("Notebooks");
                 List<Product> keyboardsInBD = Factory.GetProductsFromDB("Keyboards");
+                /* Obtenemos de c/Producto su ID y lo almacenamos en una List<int>*/
                 List<int> productsInBD_IDS = Factory.GetProductsSerialNumber(notebooksInBD);
                 productsInBD_IDS.AddRange(Factory.GetProductsSerialNumber(keyboardsInBD));
+                /* Ordenamos la lista de IDs interna de Factory y la creada en el paso anterior*/
                 productsInBD_IDS.Sort();
                 listOfProductsID.Sort();
+                /* Comparamos IDs y en caso de existir aumentamos newID en 1. Repetimos*/
                 exists = Factory.ContainsID(productsInBD_IDS, ref newID);
                 exists = Factory.ContainsID(listOfProductsID, ref newID);
                 if (!(exists))
@@ -193,11 +197,10 @@ namespace EntidadesCore
         /// <returns>La lista de Productos</returns>
         private static List<Product> GetProductsFromDB(string table)
         {
-            string connectionString = "Data Source=.;Initial Catalog=Products;Integrated Security=True";
             List<Product> list;
             try
             {
-                list = SQL<Product>.QueryBD(connectionString, $"SELECT * from {table}");
+                list = SQL<Product>.QueryBD($"SELECT * from {table}");
                 return list;
             }
             catch (SqlException ex)

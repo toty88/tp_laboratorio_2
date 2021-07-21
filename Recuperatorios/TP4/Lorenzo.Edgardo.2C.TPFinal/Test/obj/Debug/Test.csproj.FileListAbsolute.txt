@@ -8,3 +8,14 @@ C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.csproj
 C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.csproj.CopyComplete
 C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.exe
 C:\Users\toty\source\repos\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.pdb
+C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\Test\bin\Debug\Test.exe.config
+C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\Test\bin\Debug\Test.exe
+C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\Test\bin\Debug\Test.pdb
+C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\Test\bin\Debug\EntidadesCore.dll
+C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\Test\bin\Debug\EntidadesCore.pdb
+C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\Test\bin\Debug\EntidadesCore.dll.config
+C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.exe
+C:\Users\toty\Desktop\TP4 -V 2.0 - FW 4.6.1\Lorenzo.Edgardo.2C.TPFinal\Test\obj\Debug\Test.pdb
