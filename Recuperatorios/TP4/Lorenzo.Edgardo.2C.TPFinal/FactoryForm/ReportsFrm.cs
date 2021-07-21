@@ -49,8 +49,6 @@ namespace FactoryForm
             if ((MessageBox.Show("Seguro desea Salir?", "Volver", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
                 == DialogResult.OK))
             {
-                if (!(this.callingThread is null) && this.callingThread.IsAlive)
-                    this.callingThread.Abort();
                 this.Close();
             }
         }
